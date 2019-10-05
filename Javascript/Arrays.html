@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Challenge</title>
+<style>
+  #circle{
+    width: 400px;
+    height: 400px;
+    border-radius:200px;
+    background-color: red; 
+  }
+</style>
+</head>
+<body>
+    
+  <input id="myInput" type="text" value="update value"/>
+  <button id="stylesChanger">Change change the text</button>
+  <div id="firstDiv">This is some text</div>
+  
+</body>
+<script type="text/javascript">
+var myArray = new Array();
+//checking elements in the array by utilizing the webrowsers concole
+
+myArray[0]="Lamboghini";
+myArray[1]="Ferrari";
+myArray[2]="LFA";
+myArray[3]="Porshe";
+
+console.log(myArray);
+
+myOtherArray=["Zuri","Ngina","Kibe"]
+
+myOtherArray.push("Mercy");
+
+myOtherArray.splice(2,0, "Shiro");
+
+console.log(myOtherArray);
+
+document.getElementById("stylesChanger").onclick=function(){
+
+  newText=document.getElementById("myInput").value
+  document.getElementById("firstDiv").innerHTML=myArray[1];
+}
+</script>
+</html>

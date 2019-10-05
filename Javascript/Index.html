@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Mose BBC</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<button id="textChanger">Change first div text</button>
+
+<div id="firstDiv">This is Zuri text</div>
+
+<button id="textAppender">Append some text</button>
+
+<div id="secondDiv">Javascript is....</div>
+
+<button id="textCreator">Create some text</button>
+
+<div id="thirdDiv"></div>
+
+
+<script type="text/javascript">
+
+  //This is a comment
+  /*
+  This a text comment block
+  */
+  document.getElementById("textChanger").onclick= function(){
+    document.getElementById("firstDiv").innerHTML="Now this is Zuri's mom's text";
+  }
+
+  document.getElementById("textAppender").onclick= function(){
+    document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML + "Worth Learning";
+  }
+
+  document.getElementById("textCreator").onclick= function(){
+    document.getElementById("thirdDiv").innerHTML="<ul><li>Zuri</li><li>Ngina</li><li>Mbutha</li></ul>";
+    }
+</script>
+</body>
+</html>
