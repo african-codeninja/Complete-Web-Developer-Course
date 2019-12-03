@@ -23,7 +23,7 @@
 </body>
 <script type="text/javascript">
 var myArray = new Array();
-//checking elements in the array by utilizing the webrowsers concole
+//checking elements in the array by utilizing the webrowsers console
 
 myArray[0]="Lamboghini";
 myArray[1]="Ferrari";
@@ -36,14 +36,16 @@ myOtherArray=["Zuri","Ngina","Kibe"]
 
 myOtherArray.push("Mercy");
 
-myOtherArray.splice(2,0, "Shiro");
+myOtherArray.push("Nyoks");
+
+myOtherArray.splice(0,0, "Shiro");
 
 console.log(myOtherArray);
 
 document.getElementById("stylesChanger").onclick=function(){
 
   newText=document.getElementById("myInput").value
-  document.getElementById("firstDiv").innerHTML=myArray[1];
+  document.getElementById("firstDiv").innerHTML=myArray[2];
 }
 </script>
 </html>
