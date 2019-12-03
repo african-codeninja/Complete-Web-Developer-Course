@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript If Statement</title>
+
+</head>
+<body>
+
+<p>How Manay fingers am I holding</p>
+<input id="answer" type="text">
+<button id="myButton">Submit</button>
+
+    <script type="text/javascript">
+    document.getElementById('myButton').onclick = function() {
+      var x = Math.random();
+    x=6*x;
+
+    x=Math.floor(x)
+
+    if(x==document.getElementById('answer').value){
+      alert('Thats correct');
+    }
+    else{
+      alert('Thats wrong! My number was '+x);
+    }
+
+    }
+    
+    </script>
+  
+</body>
+
+</html>
